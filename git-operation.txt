@@ -1,0 +1,4 @@
+## Here, we learn operations that we can perform in git
+ 1. Cherry-Picking
+ Applying specific commits from one branch to another branch without merging full history or, the branch
+
