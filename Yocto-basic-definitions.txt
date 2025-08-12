@@ -1,0 +1,11 @@
+## base-layer -->> its the Foundation for the build system
+- provided by yocto/poky
+- base layer provides core functionality and definitions
+- includes essential BitBake recipes, core classes, basic machine configurations
+- standard tasks like building the kernal, busybox etc
+
+## meta-layer -->> plugins that sit on the top of the base layer
+- we can create our own meta-layer
+- provides add-on functionality
+- adds features, customisations or, supports new hardwares
+- contains optional recipes, machines, configs 
