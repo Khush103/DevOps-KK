@@ -16,3 +16,9 @@ git commit --amend   ##remove old things/tickets and add your details
 git push origin <new-branch>
 git push origin HEAD:refs/heads/idcevo-pu2511-timeout-to-12hrs   ##If you forgot to checkout to new branch##
 
+
+2. git pull -->> git pull = git fetch + git merge
+(i) git fetch - downloads changes from the remote
+(ii) git merge - merges the changes in your local branch
+
+
