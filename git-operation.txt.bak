@@ -1,6 +1,8 @@
 ## Here, we learn operations that we can perform in git
  1. Cherry-Picking
  Applying specific commits from one branch to another branch without merging full history or, the branch
+<<<<<<< HEAD
+=======
 Steps: 
 git clone <repo>
 cd repo
@@ -15,4 +17,5 @@ git cherry-pick --continue
 git commit --amend   ##remove old things/tickets and add your details
 git push origin <new-branch>
 git push origin HEAD:refs/heads/idcevo-pu2511-timeout-to-12hrs   ##If you forgot to checkout to new branch##
+>>>>>>> b1ce0360a2e694884ab4589af7301e022eae0026
 
