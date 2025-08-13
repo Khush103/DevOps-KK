@@ -1,0 +1,21 @@
+Hello Myself!! Definitions to Learn!!!
+
+-----Yocto---------
+- an `open-source project` that provides templates, tools and methods to create your own `custom Linux distributions` for embedded systems.
+
+Yocto includes 3 key components - 
+
+- `BitBake` - build engine
+
+- `poky` - reference distribution
+
+- `Layers` - OE core - functionality
+
+
+
+
+
+
+
+
+
