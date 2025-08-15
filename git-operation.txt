@@ -21,4 +21,5 @@ git push origin HEAD:refs/heads/idcevo-pu2511-timeout-to-12hrs   ##If you forgot
 (i) git fetch - downloads changes from the remote
 (ii) git merge - merges the changes in your local branch
 
+3. git merge <branch-name> ->> merges the <branch-name> into your current branch
 
