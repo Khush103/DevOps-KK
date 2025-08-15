@@ -1,0 +1,7 @@
+- git log -n #to see the last n commits
+- git show <commit-hash> #to see the details of a perticular commit
+- git fetch #to download changes (commits, branches and tags) from remote 
+      ~ git fetch [remote -->> origin] [branch]
+- git merge <branch-name> #to merge the specified branch to your current branch
+
+
