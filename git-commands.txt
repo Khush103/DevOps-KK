@@ -25,13 +25,16 @@
 - git revert <commit> #create a new commit that undoes a previous commit
 
 
-
+# Rebasing #reapply commits on the top of another base commit
+git rebase <upstream>
 
 
 
 - git log -n #to see the last n commits
 
 - git show <commit-hash> #to see the details of a perticular commit
+
+- git blame <filename> #shows who last modified each line of a file
 
 - git fetch #to download changes (commits, branches and tags) from remote 
 

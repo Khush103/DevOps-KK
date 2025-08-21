@@ -1,0 +1,31 @@
+# remote -  a version of your repo hosted on the internet or, network
+
+# tracking branch - a local branch that has a direct relationship with a remote branch
+    - git branch -vv #to view the tracking branches
+
+# HEAD - represents the current branch reference - the commit you are currently on
+
+# staging area - where changes are prepared before being commited
+
+# working directory - the actual files/folders your are currently working on
+
+# Tag - marks a specific point of history as important, often used for releases
+
+# Fork - A complete copy of someone else’s repository under your account
+
+# 
+
+
+# upstream - refers to the remote repository or, branch that your current branch is based on.
+- relevant for collaboration workflows
+- ex - origin/master
+
+# upmerge - merging changes from a lower-level (downstream) to higher-level (upstream)
+# downmerge - reverse of upmerge
+
+# Fetch - Downloads commits, branches, and tags from a remote — but does not merge.
+# Pull - Fetch + Merge (or Rebase): Brings remote changes into your local branch.
+# Push - Sends your commits to the remote repository.
+
+# conflict - Occurs when Git cannot automatically merge changes. Requires manual intervention.
+

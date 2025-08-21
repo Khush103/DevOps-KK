@@ -23,3 +23,6 @@ git push origin HEAD:refs/heads/idcevo-pu2511-timeout-to-12hrs   ##If you forgot
 
 3. git merge <branch-name> ->> merges the <branch-name> into your current branch
 
+4. git rebase - used to move or, combine a sequence of commits to a new base commit.
+git rebase <upstream>
+
