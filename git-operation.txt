@@ -26,3 +26,21 @@ git push origin HEAD:refs/heads/idcevo-pu2511-timeout-to-12hrs   ##If you forgot
 4. git rebase - used to move or, combine a sequence of commits to a new base commit.
 git rebase <upstream>
 
+5. Squashing
+git clone <repo>
+cd repo
+git checkout <ECU branch on top of which you want to cherry-pick>
+git checkout -b <new-branch>
+git cherry-pick <commit-id>
+git cherry-pick <commit-id>
+git cherry-pick <commit-id>
+...
+#resolve the conflicts if any#
+git rebase -i HEAD~n #say you want to squash last n commits
+#it opens interactive rebase
+#pick the 1st commit/the commit in which you want to squash the changes
+#squash or s the other commits
+#change the commit msg if needed
+git commit --amend
+git push -f origin HEAD:refs/heads/<branch-name>
+

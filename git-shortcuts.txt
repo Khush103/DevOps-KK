@@ -1,0 +1,16 @@
+- esc dd #to delete a complete line during vim
+
+- :%s/pick/s/g #replaces all occurances of pick by s
+
+- ctrl + A #moves the cursor to the start of the line
+- ctrl + E #moves the cursor to the end of the line
+- crtl + U #cut (delete) from cursor to beginning of line
+- crtl + K #cut (delete) from cursor to ending of line
+- ctrl + L #clear the terminal like clear
+
+- !! #repeat the last command
+- !git #repeat the last command starting with git
+- ctrl + R #reverse search in command history
+- ctrl + G #exit reverse search
+- 
+
