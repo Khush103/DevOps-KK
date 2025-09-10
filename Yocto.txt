@@ -13,6 +13,15 @@ Yocto includes 3 key components -
 
 
 
+###----BUILD YOUR OWN IMAGE---###
+git clone -b kirkstone git://git.yoctoproject.org/poky -> clone the poky repo (reference distribution for Yocto)
+cd poky
+source oe-init-build-env  -> set up the build environment
+# edit conf/local.conf to set up your hardware as needed
+bitbake core-image-minimal # bitbake builds an image, find the built image in build/tmp/deploy/images/<machine>/
+
+
+
 
 
 
