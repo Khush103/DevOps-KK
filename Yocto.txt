@@ -7,6 +7,8 @@ Yocto includes 3 key components -
 
 - `BitBake` - build engine
 
+- apt - advanced packaging tool
+
 - `poky` - reference distribution
 
 - `Layers` - OE core - functionality
