@@ -38,3 +38,6 @@
 # Networking
 - hostname -> print hostname
 - ping -> send packets to url and prints response
+- ifconfig -> display or, config system network interfaces
+- curl -> displays contents of file at a url
+- wget -> download file from a url
