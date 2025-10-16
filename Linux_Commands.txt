@@ -13,24 +13,28 @@
 .. - parent of present directory
 
 # Comman Commands
-- ps -> running processes
-- top -> resource usage
-- man -> reference manual for any command
+- ps -e -> all running processes
+- top -n 3 -> resource usage #top - table of processes
+- man <any command> -> reference manual for any command
 - date -> today's date
 - uname -> operating system name
 - cp -> copy file
 - mv -> move file
 - rf -> remove file
-- touch -> create empty file
+- rm -i -r <filename> -> remove a file and its child directoried
+- rmdir -> remove empty directories
+- touch file..file n-> create one or, nore empty files
 - chmod -> change/modify file permissions
 - wc -> get count of the lines, words, characters in a file
 - grep -> return lines in a file matching pattern
-- find -> find files in the present directory
+- find . -name "search-text"-> find files in the present directory
 - rmdir -> removes an entire directory
 - cat -> print file contents
 - more -> print file contents page-by-page
 - head -> print first N lines of a file
 - tail -> print last N lines of a file
+- df -h -> disk space
+- 
 # File compression and archiving
 - tar -> archive a set of file
 - zip -> compress a set of files
