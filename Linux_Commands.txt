@@ -34,7 +34,8 @@
 - head -> print first N lines of a file
 - tail -> print last N lines of a file
 - df -h -> disk space
-- 
+- wget -> downloading files from the web via HTTP, HTTPS, or FTP protocols.
+
 # File compression and archiving
 - tar -> archive a set of file
 - zip -> compress a set of files
@@ -45,3 +46,14 @@
 - ifconfig -> display or, config system network interfaces
 - curl -> displays contents of file at a url
 - wget -> download file from a url
+
+# Security - Managing File Permissions and Ownership
+- Whoever creates a file, namely the `user` at the time of creation, becomes the `owner` of that file by default. A `group` of users can also share ownership of a file. The `other` category essentially refers to anyone in the universe with access to your Linux machine.
+- Only an official owner of a file is allowed to change its permissions.
+- ls -l -> displays the file's (default) permissions: rw-r--r-- -> user-permissions(rw)-group-permissions(r)--others-permissions(r)--
+- chmod go-r <file-name> ->  `go-r` is the permission change to be applied, which in this case means removing for the group (g) and others (o) the read (r) permission. 
+- chmod -r <file-name> -> revokes the read permissions for all the users
+- chmod +r <file-name> -> grants read permissions for all the users
+- chmod o-r <file-name> -> revokes the read permissions only for others
+- The chmod command can be used with both files and directories.
+
