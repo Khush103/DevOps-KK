@@ -47,6 +47,26 @@ Option	Description
 - paste <file1> <file2> -> merge lines of multiple files together.
 - paste -d ","<file1> <file2> -> change the delimeter from default space to comma
 
+## Computer Networking
+A computer network is a set of computers that are able to communicate with each other and share resources provided by network nodes (e.g. LANs, WANs, internet)
+A network resource is any object, such as a file or document, which can be identified by the network.
+A network node is any device that participates in a network.
+A host is a special type of node in a computer network - it is a computer that can function as a server or a client on a network.
+A server is a host computer that is able to accept a connection from a client host and fulfill certain resource requests made by the client.
+Many hosts can perform either role, acting as both client and server.
+A network packet is a formatted chunk of data that can be transmitted over a network.
+Today's computer networks typically use communication protocols that are based on such packets of information. 
+Every packet consists of two types of data: 1. the control information, and 2. the payload. 
+The control information is data about how and where to deliver the payload, such as the source and destination network addresses, while the payload is the message being sent.
+- ping -> command works by sending special 'echo request' packets to a host and waiting for a response from the host.
+
+IP stands for "Internet Protocol" which defines the format of data transmitted over the internet or a local network.
+An IP address is a code used to uniquely identify any host on a network.
+A URL, more commonly known as a web address, stands for Uniform Resource Locator.
+
+
+
+
 - rmdir -> removes an entire directory
 - cat -> print file contents
 - more -> print file contents page-by-page
