@@ -40,6 +40,13 @@ Option	Description
   -i	Ignore the case of the text while matching
   -v	Print all lines which do not contain the pattern
   -w	Match only if the pattern matches whole words
+- cut -> view only specific fields from each line of text in a file.
+- cut -c -N <file-name> -> view only first N chars of each line
+- cut -c N- zoo.txt -> view each line starting fron N-th char
+- cut -d "," -f2 <file-name>  -> -d "," tells the command that the delimiter is a comma, and -f2 tells it to extract the second field.
+- paste <file1> <file2> -> merge lines of multiple files together.
+- paste -d ","<file1> <file2> -> change the delimeter from default space to comma
+
 - rmdir -> removes an entire directory
 - cat -> print file contents
 - more -> print file contents page-by-page
