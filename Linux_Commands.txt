@@ -25,9 +25,21 @@
 - rmdir -> remove empty directories
 - touch file..file n-> create one or, nore empty files
 - chmod -> change/modify file permissions
-- wc -> get count of the lines, words, characters in a file
+- wc <file-name> -> get count of the lines, words, characters in a file
+- wc -l/-w/-c <file-name> -> for only counting lines/words/chars
 - grep -> return lines in a file matching pattern
 - find . -name "search-text"-> find files in the present directory
+- sort <file-nem> display the lines of a file sorted alphanumerically
+- sort -r <file-name> in reverse order
+- uniq -> Drop consecutive duplicated lines and display result
+## Basic text wrangling: extracting lines and fields
+- grep <pattern> <file-name> -> specify a pattern and search for lines within a file that match that pattern
+Option	Description
+  -n	Along with the matching lines, also print the line numbers
+  -c	Get the count of matching lines
+  -i	Ignore the case of the text while matching
+  -v	Print all lines which do not contain the pattern
+  -w	Match only if the pattern matches whole words
 - rmdir -> removes an entire directory
 - cat -> print file contents
 - more -> print file contents page-by-page
