@@ -63,6 +63,21 @@ The control information is data about how and where to deliver the payload, such
 IP stands for "Internet Protocol" which defines the format of data transmitted over the internet or a local network.
 An IP address is a code used to uniquely identify any host on a network.
 A URL, more commonly known as a web address, stands for Uniform Resource Locator.
+- hostname -> to view current hostname
+- hostname -i -> to view the IP adr
+## below commands to install the iproute2 package:
+sudo apt update
+sudo apt install iproute2
+- ip a -> display the configuration of all network interfaces of your system
+- ip addr show eth0 -> display the configuration of a particular device, such as the ethernet adapter
+- ping <url> -> to check if the url is reachable or, not
+- ping -c 5 <url> -> to ping only a limited number of times
+- ctrl + c to stop pinging
+- curl <url> -> access the file at following URL and display the file's contents on your screen
+- curl -O <url> -> access the file at the given URL and also save it in your current working directory
+- wget -> The wget command is similar to curl, however its primary use is for file downloading. 
+One unique feature of wget is that it can recursively download files at a URL.
+It also download the html code of a web page.
 
 
 
