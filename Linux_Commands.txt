@@ -111,3 +111,26 @@ It also download the html code of a web page.
 - chmod o-r <file-name> -> revokes the read permissions only for others
 - The chmod command can be used with both files and directories.
 
+# File and folder archiving and compression
+- tar -> pack multiple files and directories into a single archive file
+- tar -cvf bin.tar /bin -> creates an archive of the entire /bin directory and writes the archive to a single file named bin.tar
+options
+-c	Create new archive file
+-v	Verbosely list files processed
+-f	Archive file name
+
+- tar -tvf bin.tar -> To see the list of files in the archive, use the -t option
+- tar -xvf bin.tar -> To untar the archive or extract files from the archive, use the -x option
+## Package and compress archive files
+- zip -> allows you to compress files
+- zip config.zip /etc/*.conf -> creates a zip file named config.zip consisting of all the files with extension .conf in the /etc directory
+# The -r option can be used to zip an entire directory
+# The -y flag to prevent symbolic links from being followed recursively
+- zip -ry bin.zip /bin -> creates an archive of the /bin directory.
+## Extract, list, or test compressed files in a ZIP archive
+- unzip -> to extract files
+- unzip -l config.zip -> To list the files of the archive config.zip, enter the following
+- unzip -o bin.zip ->extracts all the files in the archive bin.zip
+#We added the -o option to force overwrite in case you run the command more than once.
+#You should see a folder named bin created in your directory.
+
