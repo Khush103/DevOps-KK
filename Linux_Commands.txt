@@ -13,6 +13,7 @@
 .. - parent of present directory
 
 # Comman Commands
+- ls *.<file-extension> -> list all the files with given extension the dir
 - ps -e -> all running processes
 - top -n 3 -> resource usage #top - table of processes
 - man <any command> -> reference manual for any command
