@@ -134,4 +134,6 @@ options
 - unzip -o bin.zip ->extracts all the files in the archive bin.zip
 #We added the -o option to force overwrite in case you run the command more than once.
 #You should see a folder named bin created in your directory.
+#### Compression preserves storage space, speeds data transfer, and reduces system load.
+`zip` compresses files and folders prior to archiving them. `tar` archives and compresses files and directories into a tarball. `unzip` unpacks and decompresses a zipped archive, and `tar` can also decompress and unpack a tar.gz archive.
 
