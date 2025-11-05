@@ -142,3 +142,17 @@ options
 - #! /bin/bash -> shebang 
 # "pipes" are commands in Linux which allow you to use the output of one command as the input of another.
 # Format -> [command 1] | [command 2] | [command 3] ... | [command n]
+- tr (translate) -> replaces characters in input text
+### Meta characters in Shell 
+#	-> Precedes a comment -> Any text that appears after a # on a line is treated as a comment and is ignored by the shell.
+;	-> Command separator -> separate multiple commands on a single command line
+*	-> Filename expansion wildcard -> wildcard character to represent any sequence of characters, including none
+?	-> Single character wildcard in filename expansion ->  a wildcard character to represent any single character
+\ ->	Escape metacharacter interpretation -> 
+" "	-> Interpret metacharacters within string -> When a string is enclosed in double quotes, most characters are interpreted literally, but metacharacters are interpreted according to their special meaning.
+' '	-> Escape all metacharacters within string -> When a string is enclosed in single quotes, all characters and metacharacters enclosed within the quotes are interpreted literally.
+>	-> Redirect output to file, overwrite
+>>	-> Redirect output to file, append
+2>	-> Redirect standard error to file, overwrite
+2>>	-> Redirect standard error to file, append
+<	-> Redirect file contents to standard input
