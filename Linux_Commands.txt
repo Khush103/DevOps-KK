@@ -137,3 +137,8 @@ options
 #### Compression preserves storage space, speeds data transfer, and reduces system load.
 `zip` compresses files and folders prior to archiving them. `tar` archives and compresses files and directories into a tarball. `unzip` unpacks and decompresses a zipped archive, and `tar` can also decompress and unpack a tar.gz archive.
 
+--------------------Shell Scripting Points------------------
+- which bash -> find out the path of the command bash
+- #! /bin/bash -> shebang 
+# "pipes" are commands in Linux which allow you to use the output of one command as the input of another.
+# Format -> [command 1] | [command 2] | [command 3] ... | [command n]
