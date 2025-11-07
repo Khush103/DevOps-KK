@@ -13,6 +13,7 @@
 .. - parent of present directory
 
 # Comman Commands
+- echo -e -> tells the interpreter to read the escape characters like new line \n or, tab spaces \t
 - ls *.<file-extension> -> list all the files with given extension the dir
 - ps -e -> all running processes
 - top -n 3 -> resource usage #top - table of processes
