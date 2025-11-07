@@ -156,3 +156,21 @@ options
 2>	-> Redirect standard error to file, overwrite
 2>>	-> Redirect standard error to file, append
 <	-> Redirect file contents to standard input
+
+
+
+### CRON jobs####
+- Cron is a system daemon (background process) used to execute desired tasks in the background at designated times.
+- It is edited using the crontab command.
+- Each line in a crontab file has five time-and-date fields, followed by a command, followed by a newline character (\n). - The fields are separated by spaces.
+- m h dom month dow command -> minute hour (day of month) month (day of week) <command to execute>
+- values:
+minute	0-59
+hour	0-23, 0 = midnight
+day	1-31
+month	1-12
+weekday	0-6, 0 = Sunday
+- crontab -l -> prints the current crontab
+- crontab -e -> add/edit a crontab 
+- crontab -r -> remove all your crontabs
+- 
