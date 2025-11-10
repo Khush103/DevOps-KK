@@ -1,1 +1,2 @@
 fatal - serious error that stops a process or program from continuing
+nonce - number used once - mainly to ensure security, prevent replay attacks, and verify authenticity in various systems
