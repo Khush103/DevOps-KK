@@ -1,0 +1,1 @@
+fatal - serious error that stops a process or program from continuing
