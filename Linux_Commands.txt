@@ -1,0 +1,177 @@
+# apt - advanced packaging tool
+-sudo apt upgrade -> upgrades all available packages
+- sudo apt install <package-name> -> install the specified package
+- 
+
+# pip -> python install package
+- pip install <package-name>
+
+# Special paths
+~ - home directory
+/ - root directory
+. - present directory
+.. - parent of present directory
+
+# Comman Commands
+- echo -e -> tells the interpreter to read the escape characters like new line \n or, tab spaces \t
+- ls *.<file-extension> -> list all the files with given extension the dir
+- ps -e -> all running processes
+- top -n 3 -> resource usage #top - table of processes
+- man <any command> -> reference manual for any command
+- date -> today's date
+- uname -> operating system name
+- cp -> copy file
+- mv -> move file
+- rf -> remove file
+- rm -i -r <filename> -> remove a file and its child directoried
+- rmdir -> remove empty directories
+- touch file..file n-> create one or, nore empty files
+- chmod -> change/modify file permissions
+- wc <file-name> -> get count of the lines, words, characters in a file
+- wc -l/-w/-c <file-name> -> for only counting lines/words/chars
+- grep -> return lines in a file matching pattern
+- find . -name "search-text"-> find files in the present directory
+- sort <file-nem> display the lines of a file sorted alphanumerically
+- sort -r <file-name> in reverse order
+- uniq -> Drop consecutive duplicated lines and display result
+## Basic text wrangling: extracting lines and fields
+- grep <pattern> <file-name> -> specify a pattern and search for lines within a file that match that pattern
+Option	Description
+  -n	Along with the matching lines, also print the line numbers
+  -c	Get the count of matching lines
+  -i	Ignore the case of the text while matching
+  -v	Print all lines which do not contain the pattern
+  -w	Match only if the pattern matches whole words
+- cut -> view only specific fields from each line of text in a file.
+- cut -c -N <file-name> -> view only first N chars of each line
+- cut -c N- zoo.txt -> view each line starting fron N-th char
+- cut -d "," -f2 <file-name>  -> -d "," tells the command that the delimiter is a comma, and -f2 tells it to extract the second field.
+- paste <file1> <file2> -> merge lines of multiple files together.
+- paste -d ","<file1> <file2> -> change the delimeter from default space to comma
+
+## Computer Networking
+A computer network is a set of computers that are able to communicate with each other and share resources provided by network nodes (e.g. LANs, WANs, internet)
+A network resource is any object, such as a file or document, which can be identified by the network.
+A network node is any device that participates in a network.
+A host is a special type of node in a computer network - it is a computer that can function as a server or a client on a network.
+A server is a host computer that is able to accept a connection from a client host and fulfill certain resource requests made by the client.
+Many hosts can perform either role, acting as both client and server.
+A network packet is a formatted chunk of data that can be transmitted over a network.
+Today's computer networks typically use communication protocols that are based on such packets of information. 
+Every packet consists of two types of data: 1. the control information, and 2. the payload. 
+The control information is data about how and where to deliver the payload, such as the source and destination network addresses, while the payload is the message being sent.
+- ping -> command works by sending special 'echo request' packets to a host and waiting for a response from the host.
+
+IP stands for "Internet Protocol" which defines the format of data transmitted over the internet or a local network.
+An IP address is a code used to uniquely identify any host on a network.
+A URL, more commonly known as a web address, stands for Uniform Resource Locator.
+- hostname -> to view current hostname
+- hostname -i -> to view the IP adr
+## below commands to install the iproute2 package:
+sudo apt update
+sudo apt install iproute2
+- ip a -> display the configuration of all network interfaces of your system
+- ip addr show eth0 -> display the configuration of a particular device, such as the ethernet adapter
+- ping <url> -> to check if the url is reachable or, not
+- ping -c 5 <url> -> to ping only a limited number of times
+- ctrl + c to stop pinging
+- curl <url> -> access the file at following URL and display the file's contents on your screen
+- curl -O <url> -> access the file at the given URL and also save it in your current working directory
+- wget -> The wget command is similar to curl, however its primary use is for file downloading. 
+One unique feature of wget is that it can recursively download files at a URL.
+It also download the html code of a web page.
+
+
+
+
+- rmdir -> removes an entire directory
+- cat -> print file contents
+- more -> print file contents page-by-page
+- head -> print first N lines of a file
+- tail -> print last N lines of a file
+- df -h -> disk space
+- wget -> downloading files from the web via HTTP, HTTPS, or FTP protocols.
+
+# File compression and archiving
+- tar -> archive a set of file
+- zip -> compress a set of files
+- unzip -> extract files from a compressed zip archive
+# Networking
+- hostname -> print hostname
+- ping -> send packets to url and prints response
+- ifconfig -> display or, config system network interfaces
+- curl -> displays contents of file at a url
+- wget -> download file from a url
+
+# Security - Managing File Permissions and Ownership
+- Whoever creates a file, namely the `user` at the time of creation, becomes the `owner` of that file by default. A `group` of users can also share ownership of a file. The `other` category essentially refers to anyone in the universe with access to your Linux machine.
+- Only an official owner of a file is allowed to change its permissions.
+- ls -l -> displays the file's (default) permissions: rw-r--r-- -> user-permissions(rw)-group-permissions(r)--others-permissions(r)--
+- chmod go-r <file-name> ->  `go-r` is the permission change to be applied, which in this case means removing for the group (g) and others (o) the read (r) permission. 
+- chmod -r <file-name> -> revokes the read permissions for all the users
+- chmod +r <file-name> -> grants read permissions for all the users
+- chmod o-r <file-name> -> revokes the read permissions only for others
+- The chmod command can be used with both files and directories.
+
+# File and folder archiving and compression
+- tar -> pack multiple files and directories into a single archive file
+- tar -cvf bin.tar /bin -> creates an archive of the entire /bin directory and writes the archive to a single file named bin.tar
+options
+-c	Create new archive file
+-v	Verbosely list files processed
+-f	Archive file name
+
+- tar -tvf bin.tar -> To see the list of files in the archive, use the -t option
+- tar -xvf bin.tar -> To untar the archive or extract files from the archive, use the -x option
+## Package and compress archive files
+- zip -> allows you to compress files
+- zip config.zip /etc/*.conf -> creates a zip file named config.zip consisting of all the files with extension .conf in the /etc directory
+# The -r option can be used to zip an entire directory
+# The -y flag to prevent symbolic links from being followed recursively
+- zip -ry bin.zip /bin -> creates an archive of the /bin directory.
+## Extract, list, or test compressed files in a ZIP archive
+- unzip -> to extract files
+- unzip -l config.zip -> To list the files of the archive config.zip, enter the following
+- unzip -o bin.zip ->extracts all the files in the archive bin.zip
+#We added the -o option to force overwrite in case you run the command more than once.
+#You should see a folder named bin created in your directory.
+#### Compression preserves storage space, speeds data transfer, and reduces system load.
+`zip` compresses files and folders prior to archiving them. `tar` archives and compresses files and directories into a tarball. `unzip` unpacks and decompresses a zipped archive, and `tar` can also decompress and unpack a tar.gz archive.
+
+--------------------Shell Scripting Points------------------
+- which bash -> find out the path of the command bash
+- #! /bin/bash -> shebang 
+# "pipes" are commands in Linux which allow you to use the output of one command as the input of another.
+# Format -> [command 1] | [command 2] | [command 3] ... | [command n]
+- tr (translate) -> replaces characters in input text
+### Meta characters in Shell 
+#	-> Precedes a comment -> Any text that appears after a # on a line is treated as a comment and is ignored by the shell.
+;	-> Command separator -> separate multiple commands on a single command line
+*	-> Filename expansion wildcard -> wildcard character to represent any sequence of characters, including none
+?	-> Single character wildcard in filename expansion ->  a wildcard character to represent any single character
+\ ->	Escape metacharacter interpretation -> 
+" "	-> Interpret metacharacters within string -> When a string is enclosed in double quotes, most characters are interpreted literally, but metacharacters are interpreted according to their special meaning.
+' '	-> Escape all metacharacters within string -> When a string is enclosed in single quotes, all characters and metacharacters enclosed within the quotes are interpreted literally.
+>	-> Redirect output to file, overwrite
+>>	-> Redirect output to file, append
+2>	-> Redirect standard error to file, overwrite
+2>>	-> Redirect standard error to file, append
+<	-> Redirect file contents to standard input
+
+
+
+### CRON jobs####
+- Cron is a system daemon (background process) used to execute desired tasks in the background at designated times.
+- It is edited using the crontab command.
+- Each line in a crontab file has five time-and-date fields, followed by a command, followed by a newline character (\n). - The fields are separated by spaces.
+- m h dom month dow command -> minute hour (day of month) month (day of week) <command to execute>
+- values:
+minute	0-59
+hour	0-23, 0 = midnight
+day	1-31
+month	1-12
+weekday	0-6, 0 = Sunday
+- crontab -l -> prints the current crontab
+- crontab -e -> add/edit a crontab 
+- crontab -r -> remove all your crontabs
+- 

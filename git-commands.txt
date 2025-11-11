@@ -1,0 +1,48 @@
+<<<<<<< HEAD
+=======
+- git config --global user.name "user name" #swt your user name
+
+- git config --global user.email "your email" #set your user email
+
+- git config --list #view current git config
+
+- git init #initialize a new repo
+
+- git branch <branch name> #create a new branch
+
+- git checkout -b <branch name> #create and switch to new branch
+
+###Syncing with Remote####
+- git remote -v #list connected remotes
+- git pull  #fetch and merge from remote
+- git push  #push local commits to remote
+- git push -u origin <branch> #Push new branch and set upstream tracking
+
+
+###Undoing and Fixing Mistakes
+- git log
+- git diff #to see unstages changes
+- git reset <file> to unstage a file
+- git reset --hard <commit> #reset to a specific commit (destructive)
+- git revert <commit> #create a new commit that undoes a previous commit
+
+
+
+
+
+
+- git log -n #to see the last n commits
+
+- git show <commit-hash> #to see the details of a perticular commit
+
+- git fetch #to download changes (commits, branches and tags) from remote 
+
+      ~ git fetch [remote -->> origin] [branch]
+- git pull <remote> <branch> # fetch changes from remote repo and merge them in to your current branch
+
+- git merge <branch-name> #to merge the specified branch to your current branch
+
+
+
+
+>>>>>>> e36938d55a0692c03062804eceda678f05e67d87
