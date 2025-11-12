@@ -9,3 +9,62 @@
 - provides add-on functionality
 - adds features, customisations or, supports new hardwares
 - contains optional recipes, machines, configs 
+
+## Configuration Files: 
+- Files which hold global definitions of variables, user defined variables and hardware configuration information. 
+- They tell the build system what to build and put into the image to support a particular platform.
+
+Recipe: 
+- The most common form of metadata. A recipe will contain a list of settings and tasks (instructions) for building packages which are then used to build the binary image. 
+- A recipe describes where you get source code and which patches to apply. 
+- Recipes describe dependencies for libraries or for other recipes, as well as configuration and compilation options. 
+- They are stored in layers.
+
+## Layer: 
+- A collection of related recipes. 
+- Layers allow you to consolidate related metadata to customize your build, and isolate information for multiple architecture builds. 
+- Layers are hierarchical in their ability to override previous specifications. 
+- You can include any number of available layers from the Yocto Project and customize the build by adding your layers after them. 
+- The Layer Index is searchable for layers within Yocto Project.
+
+## Metadata: 
+- A key element of the Yocto Project is the meta-data which is used to construct a Linux distribution, contained in the files that the build system parses when building an image. 
+- In general, Metadata includes recipes, configuration files and other information referring to the build instructions themselves, as well as the data used to control what things get built and to affect how they are built. 
+- The meta-data also includes commands and data used to indicate what versions of software are used, and where they are obtained from, as well as changes or additions to the software itself (patches or auxiliary files) which are used to fix bugs or customize the software for use in a particular situation. 
+- OpenEmbedded Core is an important set of validated metadata.
+
+## OpenEmbedded-Core: 
+- oe-core is meta-data composed of foundation recipes, classes and associated files that are meant to be common among many different OpenEmbedded-derived systems, including the Yocto Project. 
+- It is a curated subset of an original repository developed by the OpenEmbedded community which has been pared down into a smaller, core set of continuously validated recipes resulting in a tightly controlled and a quality-assured core set of recipes.
+
+## Poky: A reference embedded distribution and a reference test configuration created to 
+1) provide a base level functional distro which can be used to illustrate how to customize a distribution, 
+2) to test the Yocto Project components, Poky is used to validate Yocto Project, and 
+3) as a vehicle for users to download Yocto Project. 
+- Poky is not a product level distro, but a good starting point for customization. Poky is an integration layer on top of oe-core.
+
+## Build System – “Bitbake”: a scheduler and execution engine which parses instructions (recipes) and configuration data. 
+- It then creates a dependency tree to order the compilation, schedules the compilation of the included code, and finally, executes the building of the specified, custom Linux image (distribution). BitBake is a make-like build tool. BitBake recipes specify how a particular package is built. They include all the package dependencies, source code locations, configuration, compilation, build, install and remove instructions. Recipes also store the metadata for the package in standard variables. Related recipes are consolidated into a layer. During the build process dependencies are tracked and native or cross-compilation of the package is performed. As a first step in a cross-build setup, the framework will attempt to create a cross-compiler toolchain (Extensible SDK) suited for the target platform.
+
+Packages: The output of the build system used to create your final image.
+
+Extensible Software Development Kit (ESDK): A custom SDK for application developers that allows them to incorporate their library and programming changes back into the image to make their code available to other apps developers.
+
+Image: A binary form of a Linux distribution (operating system) intended to be loaded onto a device.
+
+The General “Workflow” — How It All Works
+To begin, developers specify architecture, policies, patches and configuration details.
+The build system then fetches and downloads the source code from where ever specified. The project supports standard methods such as tarballs or source code repositories systems such as git.
+Once downloaded, the sources are extracted into a local work area where patches are applied and common steps for configuring and compiling the software will be run.
+The software is then installed into a temporary staging area where the binary package format you select (deb, rpm, or ipk) will be used to roll up the software.
+Different QA and sanity checks are run throughout entire build process.
+After the binaries are created, a binary package feed is generated which is then used to create the final root file image.
+The file system image is generated.
+When using Yocto Project, this workflow will change depending on what components and tools are actually being used.
+
+
+
+Package vs Recipe: A recipe contains instructions the build system uses to create
+packages. Recipes and Packages are the difference between the front end and the result of the build process.
+
+
