@@ -72,4 +72,29 @@
 
 ### Package vs Recipe: A recipe contains instructions the build system uses to create packages. Recipes and Packages are the difference between the front end and the result of the build process.
 
+------------Distro Layer-----------------
+• classes: Class files (.bbclass) hold common functionality that can be shared among recipes in the distribution.
+When your recipes inherit a class, they take on the settings and functions for that class. 
+
+• conf: This area holds configuration files for the layer (conf/layer.conf), the distribution (conf/distro/
+distro.conf), and any distribution-wide include files.
+
+• recipes-:* Recipes and append files that affect common functionality across the distribution. This area could include
+recipes and append files to add distribution-specific configuration, initialization scripts, custom image recipes, and
+so forth. 
+- Examples of recipes-* directories are recipes-core and recipes-extra. 
+- Hierarchy and contents within a recipes-* directory can vary. Generally, these directories contain recipe files (*.bb), recipe append files (*.bbappend), directories that are distro-specific for configuration files, and so forth.
+
+--------------BSP Layer---------------------
+- The BSP Layer provides machine configurations that target specific hardware. Everything in this layer is specific to the
+machine for which you are building the image or the SDK.
+- The BSP Layers configuration directory contains configuration files for the machine (conf/machine/machine.conf)
+and, of course, the layer (conf/layer.conf).
+- The remainder of the layer is dedicated to specific recipes by function: recipes-bsp, recipes-core, recipes-graphics, recipes-kernel, and so forth. There can be metadata for multiple formfactors, graphics support, systems, and so forth.
+
+-------------Software Layer------------------
+- The software layer provides the Metadata for additional software packages used during the build. 
+- This layer does not include Metadata that is specific to the distribution or the machine, which are found in their respective layers.
+- This layer contains any recipes, append files, and patches, that your project needs.
+
 
