@@ -12,6 +12,9 @@ Yocto includes 3 key components -
 - `poky` - reference distribution
 
 - `Layers` - OE core - functionality
+- bitbake-layers create-layer meta-mylayer -> to create your own layer
+
+-  
 
 
 
