@@ -19,6 +19,7 @@
 - A recipe describes where you get source code and which patches to apply. 
 - Recipes describe dependencies for libraries or for other recipes, as well as configuration and compilation options. 
 - They are stored in layers.
+- Files that have the .bb suffix are recipes files.
 
 ## Layer: 
 - A collection of related recipes. 
