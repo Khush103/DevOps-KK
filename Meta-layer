@@ -1,4 +1,4 @@
 Metadata is the core of the Yocto Project. Metadata has several important subdivisions:
-- _meta/classes/_
+- meta/classes/
 These directories contain the .bbclass files. Class files are used to abstract common code so it can be reused by
 multiple packages. Every package inherits the base file.
