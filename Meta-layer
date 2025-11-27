@@ -31,3 +31,9 @@ directive in meta/conf/local.conf.
 - meta/recipes-bsp/
 This directory contains anything linking to specific hardware or hardware configuration information such as "u-boot"
 and "grub".
+
+- meta/recipes-connectivity/
+This directory contains libraries and applications related to communication with other devices.
+
+- meta/recipes-core/
+This directory contains what is needed to build a basic working Linux image including commonly used dependencies.
