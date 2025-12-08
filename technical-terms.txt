@@ -1,2 +1,3 @@
 fatal - serious error that stops a process or program from continuing
 nonce - number used once - mainly to ensure security, prevent replay attacks, and verify authenticity in various systems
+nitpick - to look for very small, often unimportant flaws or details
