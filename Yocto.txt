@@ -117,6 +117,7 @@ and, of course, the layer (conf/layer.conf).
 - This layer contains any recipes, append files, and patches, that your project needs.
 
 --------------------------------------------------------------------------------------------------------------------------
+######### Meta-Layer ############
 Metadata is the core of the Yocto Project. Metadata has several important subdivisions:
 - meta/classes/
 These directories contain the .bbclass files. Class files are used to abstract common code so it can be reused by
