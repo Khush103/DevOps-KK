@@ -1,4 +1,0 @@
-#to delete a file 
-- rm <filename>
-#to clone a repo
-- git clone <https://github.com/Khush103/Khush103.git>
