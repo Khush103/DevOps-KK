@@ -116,6 +116,47 @@ and, of course, the layer (conf/layer.conf).
 - This layer does not include Metadata that is specific to the distribution or the machine, which are found in their respective layers.
 - This layer contains any recipes, append files, and patches, that your project needs.
 
+--------------------------------------------------------------------------------------------------------------------------
+Metadata is the core of the Yocto Project. Metadata has several important subdivisions:
+- meta/classes/
+These directories contain the .bbclass files. Class files are used to abstract common code so it can be reused by
+multiple packages. Every package inherits the base file.
+
+- meta/conf/
+This directory contains the core set of configuration files that start from bitbake.conf and from which all other configuration
+files are included. 
+
+- meta/conf/machine/
+This directory contains all the machine configuration files. If you set MACHINE = "qemux86", the OpenEmbedded
+build system looks for a qemux86.conf file in this directory.
+
+- meta/conf/distro/
+The contents of this directory controls any distribution-specific configurations. For the Yocto Project, the defaultsetup.
+conf is the main file here. This directory includes the versions and the SRCDATE definitions for applications
+that are configured here.
+
+- meta/conf/machine-sdk/
+The OpenEmbedded build system searches this directory for configuration files that correspond to the value of SDKMACHINE.
+By default, 32-bit and 64-bit x86 files ship with the Yocto Project that support some SDK hosts.
+
+- meta/files/
+This directory contains common license files and several text files used by the build system. The text files contain minimal
+device information and lists of files and directories with known permissions.
+
+- meta/lib/
+This directory contains OpenEmbedded Python library code used during the build process. It is enabled via the addpylib
+directive in meta/conf/local.conf.
+
+- meta/recipes-bsp/
+This directory contains anything linking to specific hardware or hardware configuration information such as "u-boot"
+and "grub".
+
+- meta/recipes-connectivity/
+This directory contains libraries and applications related to communication with other devices.
+
+- meta/recipes-core/
+This directory contains what is needed to build a basic working Linux image including commonly used dependencies.
+
 
 
 
