@@ -38,3 +38,37 @@ This directory contains libraries and applications related to communication with
 
 - meta/recipes-core/
 This directory contains what is needed to build a basic working Linux image including commonly used dependencies.
+
+- meta/recipes-devtools/
+This directory contains tools that are primarily used by the build system.
+
+- meta/recipes-extended/
+This directory contains non-essential applications that add features compared to the alternatives in core. You might need
+this directory for full tool functionality.
+
+- meta/recipes-gnome/
+This directory contains all things related to the GTK+ application framework.
+
+- meta/recipes-graphics/
+This directory contains X and other graphically related system libraries.
+
+- meta/recipes-kernel/
+This directory contains the kernel and generic applications and libraries that have strong kernel dependencies.
+
+- meta/recipes-multimedia/
+This directory contains codecs and support utilities for audio, images and video.
+
+- meta/recipes-rt/
+This directory contains package and image recipes for using and testing the PREEMPT_RT kernel.
+
+- meta/recipes-sato/
+This directory contains the Sato demo/reference UI/UX and its associated applications and configuration data.
+
+- meta/recipes-support/
+This directory contains recipes used by other recipes, but that are not directly included in images (i.e. dependencies of
+other recipes).
+
+- meta/site/
+This directory contains a list of cached results for various architectures. Because certain "autoconf" test results cannot
+be determined when cross-compiling due to the tests not able to run on a live system, the information in this directory is
+passed to 􀁯autoconf􀁰for the various architectures.
