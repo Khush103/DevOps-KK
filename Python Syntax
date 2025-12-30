@@ -26,3 +26,23 @@ x % y          Modulo operator returns the remainder part of the integer divisio
 * min(): The min() function returns the smallest numeric input from multiple values or an iterable.
 * def() keyword: The purpose of the def() keyword is to define a new function.
 * return() value: The value or variable returned as the end result of a function.
+
+
+############# Comparision Operators #####
+==   Equality operator  a == b  a is equal to b
+
+!=  Not equal to operator   a != b  a is not equal to b
+
+>  Greater than operator   a > b  a is larger than b
+
+>=  Greater than or equal to operator   a >= b  a is larger than or equal to b
+
+<  Less than operator    a < b  a is smaller than b
+
+<= Less than or equal to operator   a <= b  a is smaller than or equal to b
+
+####### Logical Operators ########
+* and : The 'and' operator returns True only if both conditions are True.
+* not : The 'not' operator inverts the Boolean value of the expression it precedes.
+* or : The 'or' operator returns True if at least one of the conditions is True.
+* Logical Operators: Logical operators are used to combine multiple comparison statements, returning a Boolean result of True or False.
