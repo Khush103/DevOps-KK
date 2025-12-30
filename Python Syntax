@@ -24,3 +24,5 @@ x % y          Modulo operator returns the remainder part of the integer divisio
 * max(): The max() function returns the largest numeric input from multiple values or an iterable.
 * str(): The str() function converts any data type to a string, returning its string representation.
 * min(): The min() function returns the smallest numeric input from multiple values or an iterable.
+* def() keyword: The purpose of the def() keyword is to define a new function.
+* return() value: The value or variable returned as the end result of a function.
