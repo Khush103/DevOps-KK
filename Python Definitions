@@ -83,4 +83,12 @@ parameter (argument): A value passed into a function for use within the function
 - Add comments - Adding comments is part of creating self-documenting code. 
 Using comments allows you to leave notes to yourself and/or other programmers to make the purpose of the code clear.
 
+####### Loops #######
+* infinite loop: An infinite loop occurs when a loop lacks a method for exiting, causing it to run indefinitely.
+* initializing variables: Initializing variables before using them in a loop is crucial to avoid errors
+and ensure the loop functions correctly.
+* break: The break statement in Python allows for exiting a loop before the loop's condition is false, 
+providing control over loop execution.
+* while loop: A while loop executes a set of instructions while a specified condition is True, 
+allowing for repeated execution until the condition becomes False.
 
