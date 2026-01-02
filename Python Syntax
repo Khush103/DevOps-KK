@@ -48,12 +48,40 @@ x % y          Modulo operator returns the remainder part of the integer divisio
 * Logical Operators: Logical operators are used to combine multiple comparison statements, returning a Boolean result of True or False.
 
 ##### Loops ######
-while loop - Tells the computer to execute a set of instructions while a specified condition is True.
+- while loop - Tells the computer to execute a set of instructions while a specified condition is True.
 
-infinite loop - Missing a method for exiting the loop, causing the loop to run forever.
+- infinite loop - Missing a method for exiting the loop, causing the loop to run forever.
 
-break - A break statement in Python provides a way to exit out of a loop before the loop's condition is false. 
+- break - A break statement in Python provides a way to exit out of a loop before the loop's condition is false. 
 Once a break statement is encountered, the program's control flow jumps out of the loop and continues executing the code after the loop.
 
-pass - A pass statement in Python is a placeholder statement which is used when the syntax requires a statement,
+- pass - A pass statement in Python is a placeholder statement which is used when the syntax requires a statement,
 but you don't want to execute any code or command.
+
+- For Loop: 'For' loops are used to iterate over a sequence of values, 
+allowing repeated execution of a block of code for each item in the sequence.
+
+- Every for loop can also be written as a while loop. 
+
+
+### range() function #####
+* range() : The range() function generates a sequence of integers, which can be used in for loops to control iteration.
+* Parameters of range(): The range() function can take up to three parameters: start (inclusive), stop (exclusive), and step (increment).
+* range(start, stop, step)
+* the end-of-range value is EXCLUDED from the range.
+* Start parameter: The starting position of the range, defaulting to 0, which is included in the range.
+* Step parameter: The incremental value for the range, defaulting to +1, which can be overridden.
+* Stop parameter: The ending position of the range, which is exclusive and must be specified.
+* The "in" keyword, when used with the range() function, generates a sequence of integer numbers, 
+which can be used with a for loop to control the start point, the end point, and the incremental values of the loop.
+
+
+#### Data Types #####
+* strings - a sequence of characters and are often used to display output to the user. 
+- strings are immutable, means once created, it cannot be modified.
+
+
+
+
+
+
