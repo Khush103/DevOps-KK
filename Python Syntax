@@ -82,16 +82,17 @@ which can be used with a for loop to control the start point, the end point, and
 - strings are immutable, means once created, it cannot be modified.
 
 ...... String Methods ......
-.lower() - will return the string with all characters changed to lowercase. 
-.upper() - will return the string all in uppercase.
-.strip() - to remove surrounding whitespace from a string.
-.lstrip() & .rstrip() - to remove whitespace only from the left or the right side of the string
-.count() - to return the number of times a substring appears in a string.
-.endswith.() - This will return True if the substring is found at the end of the string, and False if not.
-.isnumeric() - can check if a string is composed of only numbers. 
-.join() - method to concatenate strings
-.split() - allows us to split a string into a list of strings. 
-.format() - to concatenate and format strings in all kinds of powerful ways. 
+string.lower() - will return the string with all characters changed to lowercase. 
+string.upper() - will return the string all in uppercase.
+string.strip() - to remove surrounding whitespace from a string.
+string.lstrip() & .rstrip() - to remove whitespace only from the left or the right side of the string
+string.count() - to return the number of times a substring appears in a string.
+string.endswith.() - This will return True if the substring is found at the end of the string, and False if not.
+string.isnumeric() - can check if a string is composed of only numbers. 
+string.join() - method to concatenate strings
+string.split() - allows us to split a string into a list of strings. 
+string.replace(old, new) - Returns a new string where all occurrences of old have been replaced by new.
+string.format() - to concatenate and format strings in all kinds of powerful ways. 
             To do this, create a string containing curly brackets, {}, as a placeholder, to be replaced. 
             Then call the format method on the string using .format() and pass variables as parameters. 
             The variables passed to the method will then be used to replace the curly bracket placeholders. 
@@ -100,8 +101,9 @@ which can be used with a for loop to control the start point, the end point, and
           - {:>3.2f} would align the text three spaces to the right, as well as specify a float number with two decimal places.
 
 
-
-
+* for character in string: Iterates over each character in the string.
+* string[i]: Accesses the character at index i of the string, starting at zero.
+* len(string): Returns the length of the string.
 
 
 
