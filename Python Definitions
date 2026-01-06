@@ -91,4 +91,33 @@ and ensure the loop functions correctly.
 providing control over loop execution.
 * while loop: A while loop executes a set of instructions while a specified condition is True, 
 allowing for repeated execution until the condition becomes False.
+- while loops are used when a segment of code needs to execute repeatedly while a condition is true
+- for loops iterate over a sequence of elements, executing the body of the loop for each element in the sequence
 
+--------------------------------------------------------------------------------------------------------------
+
+* Joining: Joining strings is the process of concatenating two or more strings together to form a larger string, 
+typically using the plus operator or the join() method.
+* Concatenation: Concatenation is the operation of linking strings together, 
+which can be done using the plus operator or the join() method for lists.
+* Slicing: Slicing a string involves extracting a subset of the original string using bracket notation and indexing.
+* Indexing: Indexing refers to accessing individual characters in a string, where the first character is at index 0, 
+and negative indexing counts from the end of the string.
+Example - 
+string1 = "Greetings, Earthlings"
+print(string1[0])   # Prints “G”
+print(string1[4:8]) # Prints “ting”
+print(string1[11:]) # Prints “Earthlings”
+print(string1[:5])  # Prints “Greet”
+
+- If your index is beyond the end of the string, Python returns an empty string.
+
+--------------- Recursion -----------
+- A recursive function must include a recursive case and base case. 
+- The recursive case calls the function again, with a different value. 
+- The base case returns a value without calling the same function.
+- A recursvie function will have usually following structure - 
+def recursive_function(parameters):
+    if base_case_condition(parameters):
+        return base_case_value
+    recursive_function(modified_parameters)
