@@ -77,8 +77,28 @@ which can be used with a for loop to control the start point, the end point, and
 
 
 #### Data Types #####
+--------------- STRINGS -------------------------------
 * strings - a sequence of characters and are often used to display output to the user. 
 - strings are immutable, means once created, it cannot be modified.
+
+...... String Methods ......
+.lower() - will return the string with all characters changed to lowercase. 
+.upper() - will return the string all in uppercase.
+.strip() - to remove surrounding whitespace from a string.
+.lstrip() & .rstrip() - to remove whitespace only from the left or the right side of the string
+.count() - to return the number of times a substring appears in a string.
+.endswith.() - This will return True if the substring is found at the end of the string, and False if not.
+.isnumeric() - can check if a string is composed of only numbers. 
+.join() - method to concatenate strings
+.split() - allows us to split a string into a list of strings. 
+.format() - to concatenate and format strings in all kinds of powerful ways. 
+            To do this, create a string containing curly brackets, {}, as a placeholder, to be replaced. 
+            Then call the format method on the string using .format() and pass variables as parameters. 
+            The variables passed to the method will then be used to replace the curly bracket placeholders. 
+            This method automatically handles any conversion between data types for us. 
+          - {:.2f} means that you’d format this as a float number, with two digits after the decimal dot.
+          - {:>3.2f} would align the text three spaces to the right, as well as specify a float number with two decimal places.
+
 
 
 
