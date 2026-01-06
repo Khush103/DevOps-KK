@@ -89,8 +89,11 @@ string.lstrip() & .rstrip() - to remove whitespace only from the left or the rig
 string.count() - to return the number of times a substring appears in a string.
 string.endswith.() - This will return True if the substring is found at the end of the string, and False if not.
 string.isnumeric() - can check if a string is composed of only numbers. 
+string.isalpha() - Returns True if there are only letters in the string. If not, returns False.
 string.join() - method to concatenate strings
-string.split() - allows us to split a string into a list of strings. 
+delimiter.join(list of strings) - Returns a new string with all the strings joined by the delimiter
+string.split() - allows us to split a string into a list of strings.
+string.split(delimiter) - Returns a list of substrings that were separated by whitespace or another string
 string.replace(old, new) - Returns a new string where all occurrences of old have been replaced by new.
 string.format() - to concatenate and format strings in all kinds of powerful ways. 
             To do this, create a string containing curly brackets, {}, as a placeholder, to be replaced. 
@@ -103,6 +106,7 @@ string.format() - to concatenate and format strings in all kinds of powerful way
 
 * for character in string: Iterates over each character in the string.
 * string[i]: Accesses the character at index i of the string, starting at zero.
+* string[i:j] - Accesses the substring starting at index i, ending at index j minus 1.
 * len(string): Returns the length of the string.
 
 
