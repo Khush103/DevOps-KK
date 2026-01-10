@@ -109,5 +109,19 @@ string.format() - to concatenate and format strings in all kinds of powerful way
 * string[i:j] - Accesses the substring starting at index i, ending at index j minus 1.
 * len(string): Returns the length of the string.
 
+---------- Lists -------------
+- Lists are sequences of elements of any data type, and are mutable. 
+- They’re specified using square brackets.
+
+---------- Tuples ------------
+- Tuples are like lists, since they can contain elements of any data type. 
+- But unlike lists, tuples are immutable. 
+- They’re specified using parentheses instead of square brackets.
+- Tuples can be useful when we need to ensure that an element is in a certain position and will not change.
+- Tuples are useful when a function returns multiple values. In this case, what gets returned is a tuple, 
+with the return values as elements in the tuple.
+- Storing the elements of a tuple in separate variables is called "unpacking".
+
+
 
 
