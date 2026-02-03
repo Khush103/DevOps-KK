@@ -14,7 +14,7 @@ git add
 git cherry-pick --continue
 git commit --amend   ##remove old things/tickets and add your details
 git push origin <new-branch>
-git push origin HEAD:refs/heads/idcevo-pu2511-timeout-to-12hrs   ##If you forgot to checkout to new branch##
+git push origin HEAD:refs/heads/idcevo-pu2511-timeout-to-12hrs   ##If you forgot to checkout to new branch## or, pushing to a new branch
 
 
 2. git pull -->> git pull = git fetch + git merge
